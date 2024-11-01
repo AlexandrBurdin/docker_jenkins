@@ -1,3 +1,3 @@
 FROM jenkins/jenkins:latest
 
-RUN java -Djenkins.install.runSetupWizard=false
+ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
